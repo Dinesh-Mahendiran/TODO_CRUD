@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+* {
+    font-family: 'EB Garamond', serif;
+}
+
+body {
+    margin: 0 50px;
+    height: 90vh;
+    overflow: hidden;
+  
+background-image: radial-gradient(circle at 73% 14%, rgba(160, 160, 160,0.05) 0%, rgba(160, 160, 160,0.05) 50%,rgba(27, 27, 27,0.05) 50%, rgba(27, 27, 27,0.05) 100%),radial-gradient(circle at 22% 0%, rgba(251, 251, 251,0.05) 0%, rgba(251, 251, 251,0.05) 50%,rgba(219, 219, 219,0.05) 50%, rgba(219, 219, 219,0.05) 100%),radial-gradient(circle at 89% 57%, rgba(49, 49, 49,0.05) 0%, rgba(49, 49, 49,0.05) 50%,rgba(206, 206, 206,0.05) 50%, rgba(206, 206, 206,0.05) 100%),linear-gradient(90deg, rgb(238, 131, 122),rgb(184, 12, 194));justify-content: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app {
+  width: 400px;
+  height: 500px;
+  border: 5px solid black;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 45px;
+  overflow-y: scroll;
+  background-image: linear-gradient(
+      135deg,
+      rgba(107, 107, 107, 0.06) 0%,
+      rgba(107, 107, 107, 0.06) 50%,
+      rgba(202, 202, 202, 0.06) 50%,
+      rgba(202, 202, 202, 0.06) 100%
+    ),
+    linear-gradient(90deg, rgb(20, 20, 20), rgb(20, 20, 20));
+  background-size: 30px 30px;
+}
+.app::-webkit-scrollbar{
+    width: 0 !important;
+}
+#addnew{
+background-image: radial-gradient(circle at top center, rgb(145, 186, 14),rgb(9, 119, 83));
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  color: black;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.fa-plus {
+    background-image: radial-gradient(
+        circle at center center,
+        rgba(160, 99, 225, 0.22) 0%,
+        rgba(160, 99, 225, 0.22) 92%,
+        transparent 92%,
+        transparent 100%
+      ),
+      linear-gradient(90deg, hsl(338, 74%, 86%), hsl(338, 74%, 86%));
+    background-size: 45px 45px;
+    padding: 3px;
+    border-radius: 3px;
+    color: black;
+}
+
+#tasks{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+#tasks div{
+    background-image: repeating-linear-gradient(135deg, rgba(0,0,0,0.04) 0px, rgba(0,0,0,0.04) 2px,transparent 2px, transparent 4px),linear-gradient(135deg, rgb(165, 230, 235),rgb(29, 32, 232));
+    border: 3px solid black;
+    padding: 7px;
+    color: black;
+    border-radius: 15px;
+    display: grid;
+    gap: 5px;
+
+}
+#tasks div .options{
+    display: flex;
+    justify-self: center;
+    gap: 20px;
+}
+#tasks div .options i {
+    cursor: pointer;
+}
+h5{
+    color: aqua !important;
+}
+h3{
+    color: aqua !important;
+}
+
+#msg{
+    color: red;
+}
